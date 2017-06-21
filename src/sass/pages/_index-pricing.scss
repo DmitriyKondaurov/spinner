@@ -1,0 +1,100 @@
+.pricing {
+  padding-bottom: 50px;
+  padding-top: 100px;
+  position: relative;
+  .section_footer_triangle {
+    bottom: -107px;
+    z-index: 1;
+  }
+  svg.triangle {
+    background-color: transparent;
+    &.bg_white path {
+      fill: #fff;
+      stroke: #fff;
+      stroke-width: 1;
+    }
+  }
+}
+.price-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  > li {
+    flex-basis: 300px;
+    padding: 15px 0;
+    background-color: $brand-color;
+    text-align: center;
+    color: #000;
+    transition: 0.5s;
+    &:hover {
+      background-color: #009bff;
+      transition: 0.5s;
+      &:before {
+        display: block;
+        content: '\e902';
+        font: 400 26px/54px 'icomoon';
+        color: $main-color;
+        padding-top: 10px;
+      }
+      li {
+        background-color: #009bff;
+      }
+    }
+    li {
+      padding: 5px 0;
+      font: 400 18px/72px $main-font;
+    }
+    h3 {
+      margin: 0;
+      color: $sec-text-color;
+      font: 700 26px/72px $main-font;
+      text-transform: uppercase;
+    }
+    div {
+      font-family: Lato;
+      font-size: 48px;
+      font-weight: 800;
+      line-height: 72px;
+      span:first-child {
+        font-family: Lato;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 72px;
+        text-transform: uppercase;
+        vertical-align: super;
+      }
+      span:last-child {
+        font-family: Lato;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 72px;
+        vertical-align: sub;
+      }
+    }
+  }
+  ul {
+    border-top: 1px solid white;
+  }
+
+}
+
+//________________________________________________________________________________
+@media screen and ($xs) {
+
+}
+
+@media screen and ($sm) {
+
+}
+
+@media screen and ($md) {
+
+}
+
+@media screen and ($lg) {
+  .pricing {
+    position: relative;
+  }
+}
+

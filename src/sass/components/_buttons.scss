@@ -1,0 +1,52 @@
+.button-more {
+  display: block;
+  width: 80px;
+  position: relative;
+  padding: 5px;
+  color: #009aff;
+  border: 1px solid #009aff;
+  border-right: none;
+  text-align: center;
+  font: 400 12px/18px $main-font;
+  &:hover {
+    background-color: $brand-color;
+    color: $main-text-color;
+    text-decoration: none;
+    &:after {
+      background: $brand-color;
+    }
+  }
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: -1;
+    top: 4px;
+    right:-10px;
+    width: 20px;
+    height: 20px;
+    border-right:1px solid #009aff;
+    border-bottom:1px solid #009aff;
+    -moz-transform:rotate(-45deg);
+    -webkit-transform:rotate(-45deg);
+  }
+}
+
+@media screen and ($xs) {
+  .button {
+  }
+}
+@media screen and ($sm) {
+  .button {
+  }
+}
+
+@media screen and ($md) {
+  .button {
+  }
+}
+
+@media screen and ($lg) {
+  .button {
+  }
+}

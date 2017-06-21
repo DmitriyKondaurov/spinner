@@ -1,0 +1,90 @@
+nav {
+  float: right;
+  padding: 50px 0;
+}
+ul.topnav {
+  z-index: 3;
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: transparent;
+  // Float the list items side by side
+  li {
+    display: inline-block;
+    padding: 0 30px;
+
+    // Style the links inside the list items
+    a {
+      display: inline-block;
+      position: relative;
+      color: $main-text-color;
+      text-align: center;
+      padding: 0 10px;
+      text-decoration: none;
+      font: 400 18px/70px $main-font;
+      // Change background color of links on hover
+      &:hover {
+        color: $main-text-color;
+        background-color: $brand-color;
+
+      }
+    }
+    // Hide the list item that contains the link that should open and close the topnav on small screens
+    &.icon {
+      display: none;
+    }
+  }
+}
+/* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
+@media screen and (max-width:968px) {
+  ul.topnav li {
+    padding: 0 10px;
+  }
+}
+@media screen and (max-width:768px) {
+  ul.topnav li {
+    display: none;
+  }
+  nav {
+    padding: 0;
+  }
+  ul.topnav {
+    li.icon {
+      display: inline-block;
+      text-align: center;
+      position: absolute;
+      right: 0;
+      top: 0;
+      padding: 0;
+      a {
+        font-size: 200%;
+        color: $sec-text-color;
+        background-color: rgba(0, 0, 0, 0.4);
+      }
+    }
+  }
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
+  ul.topnav.responsive {
+    position: relative;
+    float: right;
+    li {
+      float: none;
+      display: block;
+      padding: 0;
+      a {
+        display: block;
+        text-align: left;
+        background-color: rgba(0, 0, 0, 0.4);
+        color: $sec-text-color;
+        &:hover {
+          background-color: $brand-color;
+          color: black;
+          text-shadow: none;
+
+        }
+      }
+    }
+  }
+}

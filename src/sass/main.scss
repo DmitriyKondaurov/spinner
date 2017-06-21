@@ -1,0 +1,26 @@
+@import 'utils/variables',
+'utils/mixins';
+
+@import 'base/normalize',
+  '../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap',
+  '../../bower_components/owl.carousel/src/scss/owl.carousel',
+  '../../bower_components/owl.carousel/src/scss/theme.default',
+'base/base';
+
+@import 'fonts/fonts';
+
+@import 'layout/navigation',
+'layout/header',
+'layout/footer',
+'layout/forms';
+
+@import 'components/buttons';
+
+@import
+'pages/index-hero',
+'pages/index-service-list',
+'pages/index-blog',
+'pages/index-clients',
+'pages/index-contacts';
+
+

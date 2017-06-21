@@ -93,3 +93,8 @@ gulp.task('watch', ['browser-sync', 'sass'], function() {
     gulp.watch('src/js/**/*.js', browserSync.reload);
 });
 
+//////////////////////////////
+// Default Task
+//////////////////////////////
+
+gulp.task('default', ['watch']);

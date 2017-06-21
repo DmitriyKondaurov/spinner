@@ -1,0 +1,25 @@
+@mixin font($weight: normal, $size: 16px, $height: 35px, $family: 'Open Sans') {
+  font: {
+    weight: $weight;
+    size: $size;
+    family: $family;
+  }
+  line-height: $height;
+}
+
+@mixin text($color: $secondary-color, $align: left, $decoration: none, $indent: 0, $transform: none) {
+  text: {
+    align: $align;
+    decoration: $decoration;
+    indent: $indent;
+    transform: $transform;
+  }
+  color: $color;
+}
+
+@mixin transition($seconds: 0.2s) {
+  -webkit-transition: all $seconds;
+  -moz-transition: all $seconds;
+  -o-transition: all $seconds;
+  transition: all $seconds;
+}

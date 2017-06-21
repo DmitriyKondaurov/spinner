@@ -1,0 +1,68 @@
+.header {
+  height: 140px;
+  padding: 0;
+  color: $main-text-color;
+  //&.active {
+    background-color: $main-color;
+  //}
+}
+.logo {
+  float: left;
+  padding: 20px;
+  h1 {
+    margin: 0;
+  }
+}
+.main-nav {
+  position: fixed;
+  right: 0;
+  z-index: 5;
+}
+.main-nav-scrolled {
+  background-color: rgba(0, 0, 0, 0.4);
+  .topnav li a {
+    color: $sec-text-color;
+  }
+}
+  @media screen and ($xs) {
+
+}
+
+@media screen and ($sm) {
+  .main-nav {
+    position: inherit;
+  }
+  .main-nav-scrolled {
+    position: fixed;
+    max-width: 1650px;
+    margin: auto;
+    height: 70px;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    padding: 0;
+    .topnav {
+      float: right;
+      padding-right: 0px;
+    }
+  }
+}
+
+@media screen and ($md) {
+
+}
+
+@media screen and ($lg) {
+  .header {
+    .wrapper {
+      max-width: 1650px;
+      margin: auto;
+      padding: 0 120px;
+    }
+  }
+  .main-nav-scrolled {
+    .topnav {
+      padding-right: 121px;
+    }
+  }
+}
