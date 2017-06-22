@@ -1,95 +1,38 @@
 .hero {
   position: relative;
-  padding: 30px 0 0 0;
-  background: $main-color url("../img/slider-bg.png") center no-repeat;
+  padding-top: 50px;
+  text-align: center;
+  background: url(../img/bg-sec1.jpg) bottom center no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
 }
-.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
-  background: $brand-color;
+.hero_wrap, .hot_buy_wrap {
+  max-width: 1170px;
+  margin: auto;
 }
-.owl-carousel {
-  .item {
-    position: relative;
-    max-width: $wrapper;
-    margin: auto;
-    padding: 20px 55px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-  }
-  .owl-item img {
-    width: 130%;
-    position: relative;
-  }
+.prod-img {
+  overflow: hidden;
+  max-width: 400px;
 }
-.owl-theme .owl-nav {
-  position: absolute;
-  width: 100%;
-  top: -50px;
-  .owl-prev, .owl-next {
-    position: absolute;
-    width: 45px;
-    height: 100px;
-    background-color: #000;
-    font-size: 44px;
-    line-height: 90px;
+.hot_buy {
+  -webkit-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  .text {
+    padding: 20px;
+    margin: 0;
   }
 }
-.owl-prev {
-  left: 0;
-  transform: translate(10%, 250%);
+.form, .prod-img {
+  display: inline-block;
 }
-.owl-next {
-  right: 0;
-  transform: translate(-10%, 250%);
-}
-.slogan {
-  flex-basis: 50%;
-  margin: 0;
-  position: relative;
-  h2 {
-    color: #000000;
-    font: bold 28px/40px $main-font;
-    text-transform: uppercase;
-    text-align: center;
-    span {
-      background-color: $brand-color;
-    }
-  }
-  p {
-    font: bold 14px/22px $main-font;
-    color: $sec-text-color;
-    text-align: center;
-    span {
-      background-color: $sec-color;
-    }
-  }
-  .button-order {
-    width: 190px;
-    height: 40px;
-    display: block;
-    margin: 25px auto;
-    padding: 0 30px;
-    background-color: #000;
-    border-bottom: 3px solid $brand-color;
-    color: $sec-text-color;
-    font: bold 24px/38px $main-font;
-    &:hover {
-      background-color: $brand-color;
-      color: $main-text-color;
-    }
+.form-line {
+  input {
+    width: 320px;
+    padding: 5px;
+    margin: 10px;
   }
 }
-.owl-theme .owl-dots .owl-dot span {
-  width: 20px;
-  height: 20px;
-  margin: 2px;
-  background: $sec-color;
-  display: block;
-  border-radius: 0;
-  border: 3px solid $sec-color;
-}
-
 //________________________________________________________________________________
 @media screen and ($xs) {
   .hero {
@@ -98,21 +41,6 @@
 
 @media screen and ($sm) {
   .hero {
-    .owl-carousel {
-      .item {
-        flex-flow: row nowrap;
-      }
-    }
-    .slogan {
-      h2 {
-        text-align: left;
-        font: bold 32px/46px $main-font;
-      }
-      p {
-        text-align: left;
-        font: bold 20px/28px $main-font;
-      }
-    }
   }
 }
 
@@ -123,24 +51,6 @@
 
 @media screen and ($lg) {
   .hero {
-    .slogan {
-      flex-basis: 60%;
-      margin: 40px 0;
-      right: -50px;
-      h2 {
-        font: bold 70px/90px $main-font;
-      }
-      p {
-        width: 55%;
-        font: bold 24px/32px $main-font;
-      }
-    }
-    .owl-carousel {
-      .owl-item img {
-        position: relative;
-        left: -50px;
-      }
-    }
   }
 }
 

@@ -1,68 +1,47 @@
 .about {
-  background-color: #ececec;
-  position: relative;
-  .container {
-    padding: 30px 15px 100px 15px;
-  }
-  li {
-    display: flex;
-    flex-flow: column nowrap;
-    text-align: center;
-    p {
-      font-size: 14px;
+  text-align: center;
+  background: linear-gradient(to right, white, rgba(255, 250, 180, 0.5), white), url(../img/bike-car.png) 100% 100% no-repeat;
+  .about_wrap {
+    max-width: 1170px;
+    margin: auto;
+    ul {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      li {
+        padding: 10px;
+        width: 300px;
+      }
     }
   }
 }
-
+.quality {
+  text-align: center;
+  background: linear-gradient(to right, white, #e6e6e6, white), url(../img/bike-car.png) 100% 100% no-repeat;
+  ul {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+    li {
+      padding: 10px;
+      list-style: decimal;
+      text-align: left;
+    }
+  }
+}
 @media screen and ($xs) {
 
 }
 
 @media screen and ($sm) {
-  .about {
-    .container {
-    }
-  }
+
 }
 
 @media screen and ($md) {
-  .about {
-    li {
-      &:nth-child(1) {
-        &::after {
-          display: block;
-          background: url(../img/polygon-1.png) center no-repeat;
-          content: '\e904';
-          font: 300 52px/160px 'icomoon';
-          text-align: center;
-          color: #fff;
-        }
-      }
-      &:nth-child(2) {
-        &::before {
-          display: block;
-          background: url(../img/polygon-1.png) center no-repeat;
-          content: '\e900';
-          font: 300 52px/160px 'icomoon';
-          text-align: center;
-          color: #fff;
-        }
-      }
-      &:nth-child(3) {
-        &::after {
-          display: block;
-          background: url(../img/polygon-1.png) center no-repeat;
-          content: '\e907';
-          font: 300 52px/160px 'icomoon';
-          text-align: center;
-          color: #fff;
-        }
-      }
-    }
-  }
+
 }
 
 @media screen and ($lg) {
-  .about {
-  }
+
 }

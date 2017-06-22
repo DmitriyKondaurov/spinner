@@ -1,0 +1,28 @@
+.goods {
+  text-align: center;
+  .goods_wrap {
+    max-width: 1170px;
+    margin: auto;
+    ul {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+@media screen and ($xs) {
+
+}
+
+@media screen and ($sm) {
+
+}
+
+@media screen and ($md) {
+
+}
+
+@media screen and ($lg) {
+
+}

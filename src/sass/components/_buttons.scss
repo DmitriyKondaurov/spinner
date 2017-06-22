@@ -7,10 +7,10 @@
   border: 1px solid #009aff;
   border-right: none;
   text-align: center;
-  font: 400 12px/18px $main-font;
+  font: 400 12px/18px $font-main;
   &:hover {
     background-color: $brand-color;
-    color: $main-text-color;
+    color: $text-main-color;
     text-decoration: none;
     &:after {
       background: $brand-color;

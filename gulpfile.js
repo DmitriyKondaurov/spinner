@@ -33,10 +33,16 @@ gulp.task('browser-sync', function() {
 
 gulp.task('scripts', function() {
     return gulp.src([
-        'bower_components/jquery/dist/jquery.min.js',
-        'bower_components/magnific-popup/dist/jquery.magnific-popup.min.js',
         'bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js',
         'bower_components/owl.carousel/dist/owl.carousel.min.js',
+        'src/js/animate-css.js',
+        'src/js/jqBootstrapValidation.js',
+        'src/js/navigation.js',
+        'src/js/parallax.min.js',
+        'src/js/respond.min.js',
+        'src/js/smooth_scroll.js',
+        'src/js/waypoints.min.js',
+        'src/js/main.js',
     ])
         .pipe(concat('libs.min.js'))
         .pipe(uglify())
