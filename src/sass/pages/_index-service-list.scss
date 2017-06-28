@@ -1,12 +1,24 @@
-.service-list {
-
+.service_list {
+  text-align: center;
+  background: linear-gradient(to right, white, rgba(230, 230, 230, 0.5), white), url(../img/bike-car.png) 100% 100% no-repeat;
+}
+.form_buy {
+  text-align: center;
+  .prod-img {
+    display: none;
+  }
 }
 @media screen and ($xs) {
 
 }
 
 @media screen and ($sm) {
-
+  .form_buy {
+    .prod-img {
+      display: inline-block;
+      width: 50%;
+    }
+  }
 }
 
 @media screen and ($md) {

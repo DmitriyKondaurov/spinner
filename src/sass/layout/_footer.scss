@@ -1,7 +1,25 @@
 footer {
-
+  text-align: center;
+  background-color: rgba(118, 118, 118, 0.5);
+  .footer_wrapper {
+    max-width: 1170px;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+  }
+  h2 {
+    padding: 0 50px;
+  }
 }
-
+.np-logo {
+  float: left;
+  padding: 0 20px 0 0;
+}
+.footer_contacts {
+  width: 360px;
+  text-align: left;
+  font-size: 18px;
+}
 @media screen and ($xs) {
   footer {
 

@@ -1,5 +1,11 @@
-.clients {
-
+.testimonials {
+  background: linear-gradient(to right, white, rgba(164, 213, 212, 0.5), white);
+}
+.testimonials_item, .like_title {
+  text-align: center;
+}
+.like_content {
+  text-align: center;
 }
 @media screen and ($xs) {
 

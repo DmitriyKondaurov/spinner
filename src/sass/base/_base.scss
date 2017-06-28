@@ -20,9 +20,40 @@ img {
 .title {
   margin: 0;
   padding: 20px;
+  text-align: center;
+  font: 700 32px/36px $font-main;
+  text-transform: uppercase;
 }
 section {
   padding: 20px 0;
+}
+.bold {
+  font-weight: 900;
+}
+.loader {
+  background: none repeat scroll 0 0 #ffffff;
+  z-index: 9999;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  .loader_inner {
+    background-image: url("../lesson19/layouts/img/preloader.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #fff;
+    height: 60px;
+    width: 60px;
+    margin-top: -30px;
+    margin-left: -30px;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+  }
 }
 @media screen and ($xs) {
 
