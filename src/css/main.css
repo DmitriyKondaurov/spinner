@@ -6630,13 +6630,6 @@ section {
 .logo {
   margin: 0 10px; }
 
-.sale_sticker {
-  position: absolute;
-  top: -60px;
-  right: 0px;
-  z-index: 2;
-  width: 50%; }
-
 @font-face {}.toggle_mnu {
   position: relative;
   width: 40px;
@@ -6833,13 +6826,20 @@ footer {
   background: -webkit-linear-gradient(left, rgba(199, 255, 201, 0.5), white, rgba(199, 255, 201, 0.5));
   background: linear-gradient(to right, rgba(199, 255, 201, 0.5), white, rgba(199, 255, 201, 0.5));
   text-align: center; }
-  .form_buy .prod-img {
+  .form_buy .prod-img img {
     display: none; }
 
 .form, .prod-img {
   display: inline-block;
   position: relative;
   z-index: 1; }
+
+.form {
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
+  border: 2px solid lightgrey;
+  background-color: lightskyblue;
+  padding: 5px; }
 
 .form-line input {
   width: 300px;
@@ -6854,10 +6854,88 @@ footer {
   .dbl_form-line input:last-child {
     width: 135px; }
 
+.form .price {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: column wrap;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+
+.form .old-price {
+  padding: 5px;
+  background-color: gray;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  color: #000000;
+  text-decoration: line-through;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 48px; }
+
+.form .new-price {
+  padding: 5px;
+  background-color: yellow;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  color: red;
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 48px; }
+
+.sale_sticker {
+  position: absolute;
+  top: -30px;
+  right: 0px;
+  z-index: 2;
+  width: 50%; }
+
+.dbl_buy_price, .triple_buy_price {
+  color: red;
+  font-size: 18px; }
+
+.dbl_buy_price {
+  margin-top: 20px; }
+  .dbl_buy_price span {
+    font-size: 24px;
+    font-weight: 900;
+    padding: 5px;
+    background-color: yellow;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    color: red;
+    text-decoration: none; }
+
+input {
+  -webkit-border-radius: 5px;
+          border-radius: 5px; }
+  input[type=submit] {
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+    padding: 5px;
+    margin: 8px;
+    background-color: #c9e2b3;
+    font-variant: all-petite-caps; }
+    input[type=submit]:hover {
+      background-color: #4DC7A0; }
+
 @media screen and (min-width: 768px) {
   .form_buy .prod-img {
-    display: inline-block;
-    width: 50%; } }
+    width: 50%; }
+    .form_buy .prod-img img {
+      display: inline-block; } }
 
 .button-more {
   display: block;
@@ -6994,9 +7072,79 @@ footer {
         border: 2px solid black;
         -webkit-border-radius: 20px;
         border-radius: 20px;
-        margin: 5px; }
+        margin: 5px;
+        position: relative; }
+        .goods .goods_wrap ul li:hover .btn_open_popup {
+          opacity: 1; }
+        .goods .goods_wrap ul li:hover .price, .goods .goods_wrap ul li:hover img {
+          opacity: 0.3; }
   .goods .subtitle_orders_online {
     margin-top: 30px; }
+  .goods .price {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: row nowrap;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch; }
+  .goods .old-price {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+    padding: 5px;
+    background-color: gray;
+    color: #000000;
+    text-decoration: line-through;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 36px;
+    -webkit-border-radius: 0 0 0 18px;
+            border-radius: 0 0 0 18px;
+    border-top: 1px solid black;
+    border-right: 1px solid black; }
+  .goods .new-price {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+    padding: 5px;
+    background-color: yellow;
+    color: red;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 34px;
+    line-height: 36px;
+    border-top: 1px solid black;
+    -webkit-border-radius: 0 0 18px 0;
+            border-radius: 0 0 18px 0; }
+
+.btn_open_popup {
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  outline: none; }
+  .btn_open_popup:hover {
+    background-color: #4DC7A0; }
 
 .testimonials {
   background: -webkit-gradient(linear, left top, right top, from(white), color-stop(rgba(164, 213, 212, 0.5)), to(white));
@@ -7005,9 +7153,21 @@ footer {
 
 .testimonials_item, .like_title {
   text-align: center; }
+  .testimonials_item img, .like_title img {
+    -webkit-border-radius: 10px;
+            border-radius: 10px; }
 
 .like_content {
   text-align: center; }
+
+.text {
+  font-style: italic;
+  color: #13498f; }
+
+.name {
+  font-weight: 900;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline; }
 
 .service_list {
   text-align: center;
@@ -7021,7 +7181,9 @@ footer {
   display: none;
   float: left;
   overflow: hidden;
-  margin-right: 20px; }
+  margin-right: 20px;
+  -webkit-border-radius: 20px;
+          border-radius: 20px; }
 
 @media screen and (min-width: 768px) {
   .kinder {

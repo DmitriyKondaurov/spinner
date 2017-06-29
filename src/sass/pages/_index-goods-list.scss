@@ -14,12 +14,64 @@
         -moz-border-radius: 20px;
         border-radius: 20px;
         margin: 5px;
+        position: relative;
+        &:hover .btn_open_popup {
+          opacity: 1;
+        }
+        &:hover .price, &:hover img {
+          opacity: 0.3;
+        }
       }
     }
   }
   .subtitle_orders_online {
     margin-top: 30px;
-
+  }
+  .price {
+    display: flex;
+    justify-content: center;
+    flex-flow: row nowrap;
+    align-items: stretch;
+  }
+  .old-price {
+    flex: 1 1 auto;
+    padding: 5px;
+    background-color: gray;
+    color: #000000;
+    text-decoration: line-through;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 36px;
+    border-radius: 0 0 0 18px;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+  }
+  .new-price {
+    flex: 1 1 auto;
+    padding: 5px;
+    background-color: yellow;
+    color: red;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 34px;
+    line-height: 36px;
+    border-top: 1px solid black;
+    border-radius: 0 0 18px 0;
+  }
+}
+.btn_open_popup {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  border-radius: 10px;
+  outline: none;
+  &:hover {
+    background-color: #4DC7A0;
+    //color: #fff;
   }
 }
 @media screen and ($xs) {

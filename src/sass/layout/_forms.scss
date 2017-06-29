@@ -1,7 +1,7 @@
 .form_buy {
   background: linear-gradient(to right, rgba(199, 255, 201, 0.5), white, rgba(199, 255, 201, 0.5));
   text-align: center;
-  .prod-img {
+  .prod-img img {
     display: none;
   }
 }
@@ -9,6 +9,12 @@
   display: inline-block;
   position: relative;
   z-index: 1;
+}
+.form {
+  border-radius: 20px;
+  border: 2px solid lightgrey;
+  background-color: lightskyblue;
+  padding: 5px;
 }
 .form-line {
   input {
@@ -29,6 +35,80 @@
     }
   }
 }
+.form {
+  .price {
+    display: flex;
+    justify-content: flex-end;
+    flex-flow: column wrap;
+    align-items: flex-start;
+  }
+  .old-price {
+    padding: 5px;
+    background-color: gray;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    border-radius:10px;
+    color: #000000;
+    text-decoration: line-through;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 48px;
+  }
+  .new-price {
+    padding: 5px;
+    background-color: yellow;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    border-radius:10px;
+    color: red;
+    text-decoration: none;
+    //align-self: stretch;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 48px;
+  }
+}
+.sale_sticker {
+  position: absolute;
+  top: -30px;
+  right: 0px;
+  z-index: 2;
+  width:50%;
+}
+.dbl_buy_price, .triple_buy_price {
+  color: red;
+  font-size: 18px;
+}
+.dbl_buy_price {
+  margin-top: 20px;
+  span {
+    font-size: 24px;
+    font-weight: 900;
+    padding: 5px;
+    background-color: yellow;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    border-radius:10px;
+    color: red;
+    text-decoration: none;
+  }
+}
+
+input {
+  border-radius: 5px;
+  &[type=submit] {
+    border-radius: 5px;
+    padding: 5px;
+    margin: 8px;
+    background-color: #c9e2b3;
+    font-variant: all-petite-caps;
+    &:hover {
+      background-color: #4DC7A0;
+      //color: #fff;
+    }
+  }
+}
+
 @media screen and ($xs) {
 
 }
@@ -36,8 +116,10 @@
 @media screen and ($sm) {
   .form_buy {
     .prod-img {
-      display: inline-block;
       width: 50%;
+      img {
+        display: inline-block;
+      }
     }
   }
 }

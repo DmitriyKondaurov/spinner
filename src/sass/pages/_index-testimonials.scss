@@ -3,9 +3,21 @@
 }
 .testimonials_item, .like_title {
   text-align: center;
+  img {
+    border-radius: 10px;
+  }
 }
 .like_content {
   text-align: center;
+}
+.text {
+  font-style: italic;
+  color: #13498f;
+}
+
+.name {
+  font-weight: 900;
+  text-decoration-line: underline;
 }
 @media screen and ($xs) {
 
