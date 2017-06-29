@@ -8,10 +8,18 @@
       flex-flow: row wrap;
       justify-content: center;
       align-items: center;
+      li {
+        border: 2px solid black;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        border-radius: 20px;
+        margin: 5px;
+      }
     }
   }
   .subtitle_orders_online {
     margin-top: 30px;
+
   }
 }
 @media screen and ($xs) {

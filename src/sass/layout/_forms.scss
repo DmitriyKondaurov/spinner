@@ -1,0 +1,51 @@
+.form_buy {
+  background: linear-gradient(to right, rgba(199, 255, 201, 0.5), white, rgba(199, 255, 201, 0.5));
+  text-align: center;
+  .prod-img {
+    display: none;
+  }
+}
+.form, .prod-img {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+}
+.form-line {
+  input {
+    width: 300px;
+    padding: 5px;
+    margin: 10px 0;
+  }
+}
+.dbl_form-line {
+  input {
+    padding: 5px;
+    margin: 8px 0;
+    &:first-child {
+      width: 158px;
+    }
+    &:last-child {
+      width: 135px;
+    }
+  }
+}
+@media screen and ($xs) {
+
+}
+
+@media screen and ($sm) {
+  .form_buy {
+    .prod-img {
+      display: inline-block;
+      width: 50%;
+    }
+  }
+}
+
+@media screen and ($md) {
+
+}
+
+@media screen and ($lg) {
+
+}

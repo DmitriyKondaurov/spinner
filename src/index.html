@@ -30,7 +30,7 @@
     <div id="top_header">
         <div class="container">
             <div class="col-md-12">
-                <div class="header_order">тел. +38 097 831 44 14</div>
+                <div class="header_order"><img src="img/logo.png" alt="logo" class="logo"> +38 097 831 44 14</div>
                 <button class="toggle_mnu">
                     <span id="sandwich">
                         <span class="sw-topper"></span>
@@ -42,8 +42,9 @@
                     <ul>
                         <li><a href="#hero">Начало</a></li>
                         <li><a href="#about">Что такое спиннер?</a></li>
-                        <li><a href="#resume">Спиннеры в наличии</a></li>
-                        <li><a href="#portfolio">Доставка и оплата</a></li>
+                        <li><a href="#goods">Спиннеры в наличии</a></li>
+                        <li><a href="#testimonials">Отзывы покупателей</a></li>
+                        <li><a href="#shipment">Доставка и оплата</a></li>
                         <li><a href="#contacts">Контакты</a></li>
                     </ul>
                 </nav><!-- #site-navigation -->
@@ -62,26 +63,28 @@
         <h1 class="text">Спешите купить оригинальные спиннеры<br> по акции, недорого!!!</h1>
         <div class="prod-img"><img src="img/products.png" alt=""></div>
         <form method="POST" action="http://" class="form">
+            <img src="img/sale-img.png" alt="" class="sale_sticker">
             <div class="price">
                 <div class="old-price">
-                    <span class="old-price-value">130</span>
+                    <span class="old-price-value">90</span>
                     <span class="old-price-currency">грн.</span>
                 </div>
                 <div class="new-price">
-                    <span class="new-price-value">65</span>
+                    <span class="new-price-value">70</span>
                     <span class="new-price-currency">грн.</span>
                 </div>
             </div>
             <div class="form-line"><input type="text" name="name" required="" placeholder="Ваше ФИО"></div>
             <div class="form-line"><input type="tel" name="phone" required=""
                                           placeholder="Ваш номер телефона"></div>
-            <div class="form-line"><input type="tel" name="city" required="" placeholder="Ваш город"></div>
-            <div class="form-line"><input type="tel" name="post" required="" placeholder="Номер отделения Новой почты"></div>
+            <div class="form-line"><input type="text" name="city" required="" placeholder="Ваш город"></div>
             <div
-                    class="form-line"><input type="tel" name="city" required=""
-                                             placeholder="Какой спиннер, хотите купить?"></div>
+                    class="form-line"><input type="text" name="post" required=""
+                                             placeholder="Номер отд. Новой почты"></div>
+            <div class="dbl_form-line"><input type="text" name="color" required="" placeholder="Цвет спиннера">
+            <input type="number" name="value" required="" placeholder="Количество"></div>
             <div class="form_submit">
-                <button type="submit" class="form_submit_btn">Оформить заказ</button>
+                <input type="submit" class="form_submit_btn" value="Оформить заказ">
             </div>
         </form>
     </div>
@@ -138,101 +141,94 @@
         </ul>
     </div>
 </section>
-<section class="goods">
+<section class="goods" id="goods">
     <div class="goods_wrap">
         <h2 class="title">выберите свой спиннер</h2>
-
         <ul>
             <li>
                 <img src="img/prod-3.png" alt="">
-                <p class="title">Черный</p>
                 <div class="price ">
                     <div class="old-price">
-                        <span class="old-price-value">130</span>
+                        <span class="old-price-value">90</span>
                         <span class="old-price-currency"><sup>грн.</sup></span>
                     </div>
                     <div class="new-price">
-                        <span class="new-price-value">65</span>
+                        <span class="new-price-value">70</span>
                         <span class="new-price-currency"><sup>грн.</sup></span>
                     </div>
                 </div>
                 <button class="btn open-modal" data-modal-create="sec4-button1">купить СПИННЕР<i
                         class="sprite sprite-ic-3"></i></button>
-                <p class="subtitle">Осталось <span class="bold">22 шт.</span></p>
+                <!--<p class="subtitle">Осталось <span class="bold">22 шт.</span></p>-->
             </li>
             <li>
                 <img src="img/prod-4.png" alt="">
-                <p class="title">Белый</p>
                 <div class="price ">
                     <div class="old-price">
-                        <span class="old-price-value">130</span>
+                        <span class="old-price-value">90</span>
                         <span class="old-price-currency"><sup>грн.</sup></span>
                     </div>
                     <div class="new-price">
-                        <span class="new-price-value">65</span>
+                        <span class="new-price-value">70</span>
                         <span class="new-price-currency"><sup>грн.</sup></span>
                     </div>
                 </div>
                 <button class="btn open-modal" data-modal-create="sec4-button2">купить СПИННЕР<i
                         class="sprite sprite-ic-3"></i></button>
-                <p class="subtitle">Осталось <span class="bold">18 шт.</span></p>
+                <!--<p class="subtitle">Осталось <span class="bold">18 шт.</span></p>-->
             </li>
             <li>
                 <img src="img/prod-5.png" alt="">
-                <p class="title">Синий</p>
                 <div class="price">
                     <div class="old-price">
-                        <span class="old-price-value">130</span>
+                        <span class="old-price-value">90</span>
                         <span class="old-price-currency"><sup>грн.</sup></span>
                     </div>
                     <div class="new-price">
-                        <span class="new-price-value">65</span>
+                        <span class="new-price-value">70</span>
                         <span class="new-price-currency"><sup>грн.</sup></span>
                     </div>
                 </div>
                 <button class="btn open-modal" data-modal-create="sec4-button3">купить СПИННЕР<i
                         class="sprite sprite-ic-3"></i></button>
-                <p class="subtitle">Осталось <span class="bold">21 шт.</span></p>
-
+                <!--<p class="subtitle">Осталось <span class="bold">21 шт.</span></p>-->
             </li>
             <li>
                 <img src="img/prod-6.png" alt="">
-                <p class="title">Желтый</p>
                 <div class="price ">
                     <div class="old-price">
-                        <span class="old-price-value">130</span>
+                        <span class="old-price-value">90</span>
                         <span class="old-price-currency"><sup>грн.</sup></span>
                     </div>
                     <div class="new-price">
-                        <span class="new-price-value">65</span>
+                        <span class="new-price-value">70</span>
                         <span class="new-price-currency"><sup>грн.</sup></span>
                     </div>
                 </div>
                 <button class="btn open-modal" data-modal-create="sec4-button4">купить СПИННЕР<i
                         class="sprite sprite-ic-3"></i></button>
-                <p class="subtitle">Осталось <span class="bold">19 шт.</span></p>
+                <!--<p class="subtitle">Осталось <span class="bold">19 шт.</span></p>-->
             </li>
             <li>
                 <img src="img/prod-7.png" alt="">
-                <p class="title">Красный</p>
                 <div class="price ">
                     <div class="old-price">
-                        <span class="old-price-value">130</span>
+                        <span class="old-price-value">90</span>
                         <span class="old-price-currency"><sup>грн.</sup></span>
                     </div>
                     <div class="new-price">
-                        <span class="new-price-value">65</span>
+                        <span class="new-price-value">70</span>
                         <span class="new-price-currency"><sup>грн.</sup></span>
                     </div>
                 </div>
                 <button class="btn open-modal" data-modal-create="sec4-button5">купить СПИННЕР<i
                         class="sprite sprite-ic-3"></i></button>
-                <p class="subtitle">Осталось <span class="bold">15 шт.</span></p>
+                <!--<p class="subtitle">Осталось <span class="bold">15 шт.</span></p>-->
             </li>
 
             <!--<li>
                 <img src="img/prod-18.jpg" alt="">
-                <p class="title">Светящиеся(LED) - Зеленый</p>
+                <p class="goods_title">Светящиеся(LED) - Зеленый</p>
                 <div class="price ">
                     <div class="old-price">
                         <span class="old-price-value">255</span>
@@ -249,8 +245,7 @@
             </li>
             <li>
                 <img src="img/prod-15.jpg" alt="">
-
-                <p class="title">Светящиеся(LED) - Синий</p>
+                <p class="goods_title">Светящиеся(LED) - Синий</p>
                 <div class="price ">
                     <div class="old-price">
                         <span class="old-price-value">255</span>
@@ -267,8 +262,7 @@
             </li>
             <li>
                 <img src="img/prod-17.jpg" alt="">
-
-                <p class="title">Светящиеся(LED) - Белый</p>
+                <p class="goods_title">Светящиеся(LED) - Белый</p>
                 <div class="price ">
                     <div class="old-price">
                         <span class="old-price-value">255</span>
@@ -285,8 +279,7 @@
             </li>
             <li>
                 <img src="img/prod-16.jpg" alt="">
-
-                <p class="title">Светящиеся(LED) - Черный</p>
+                <p class="goods_title">Светящиеся(LED) - Черный</p>
                 <div class="price ">
                     <div class="old-price">
                         <span class="old-price-value">255</span>
@@ -307,7 +300,7 @@
     <p class="subtitle_orders_online">4 пользователя <span class="bold">сейчас оформляют заказ</span></p>
 </section>
 
-<section class="testimonials">
+<section class="testimonials" id="testimonials">
     <div class="container">
         <h2 class="title col-xs-12 col-sm-9 col-md-9 col-lg-9">ОТЗЫВЫ <br> Наших покупателей</h2>
         <div class="like_content col-xs-12 col-sm-3 col-md-3 col-lg-3">
@@ -341,11 +334,10 @@
         </ul>
     </div>
 </section>
-
-
-<section class="service_list">
+<section class="service_list" id="shipment">
     <div class="container">
         <h2 class="title">Доставка и ОПЛАТА</h2>
+        <div class="kinder"><img src="img/viberimage2.jpg" alt="довольный ребёнок"></div>
         <ul>
             <li>
                 <p><span class="bold">Доставка в любую точку Украины</span> — Новой Почтой, наложенным
@@ -363,32 +355,36 @@
         <form method="POST" action="http://" class="form">
             <div class="price">
                 <div class="old-price">
-                    <span class="old-price-value">130</span>
+                    <span class="old-price-value">90</span>
                     <span class="old-price-currency">грн.</span>
                 </div>
                 <div class="new-price">
-                    <span class="new-price-value">65</span>
+                    <span class="new-price-value">70</span>
                     <span class="new-price-currency">грн.</span>
                 </div>
             </div>
             <div class="form-line"><input type="text" name="name" required="" placeholder="Ваше ФИО"></div>
             <div class="form-line"><input type="tel" name="phone" required=""
                 placeholder="Ваш номер телефона"></div>
-            <div class="form-line"><input type="tel" name="city" required="" placeholder="Ваш город"></div>
-            <div class="form-line"><input type="tel" name="post" required="" placeholder="Номер отделения Новой почты"></div>
+            <div class="form-line"><input type="text" name="city" required="" placeholder="Ваш город"></div>
             <div
-            class="form-line"><input type="tel" name="city" required=""
-                placeholder="Какой спиннер, хотите купить?"></div>
+            class="form-line"><input type="text" name="post" required=""
+                placeholder="№ отд. Новой почты"></div>
+            <div class="dbl_form-line"><input type="text" name="color" required="" placeholder="Цвет спиннера">
+                <input type="number" name="value" required="" placeholder="Количество"></div>
             <div class="form_submit">
-                <button type="submit" class="form_submit_btn">Оформить заказ</button>
+                <input type="submit" class="form_submit_btn" value="Оформить заказ">
             </div>
+            <img src="img/sale-img.png" alt="" class="sale_sticker">
         </form>
-        <div class="prod-img"><img src="img/pict9.jpg" alt="фото спиннера"></div>
+        <div class="prod-img">
+            <img src="img/pict9.png" alt="фото спиннера">
+        </div>
     </div>
 </section>
-<footer>
+<footer id="contacts">
     <div class="footer_wrapper">
-        <h2>У нас самые низкие цены на спиннеры!</h2>
+        <h2><img src="img/logo.png" alt="logo" class="logo"> У нас самые низкие цены на спиннеры!</h2>
         <div class="footer_contacts">
             <div class="np-logo">
                 <img src="img/img-13.jpg" alt="logo">

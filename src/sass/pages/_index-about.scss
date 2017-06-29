@@ -1,6 +1,6 @@
 .about {
   text-align: center;
-  background: linear-gradient(to right, white, rgba(255, 250, 180, 0.5), white), url(../img/bike-car.png) 100% 100% no-repeat;
+  background: linear-gradient(to right, white, rgba(255, 250, 180, 0.5), white);
   .about_wrap {
     max-width: 1170px;
     margin: auto;
@@ -17,7 +17,7 @@
 }
 .quality {
   text-align: center;
-  background: linear-gradient(to right, white, #e6e6e6, white), url(../img/bike-car.png) 100% 100% no-repeat;
+  background: linear-gradient(to right, white, #e6e6e6, white);
   ul {
     display: flex;
     flex-flow: column wrap;

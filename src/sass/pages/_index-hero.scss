@@ -15,24 +15,15 @@
   max-width: 400px;
 }
 .hot_buy {
-  -webkit-background-size: cover;
-  background-size: cover;
+  background: linear-gradient(to right, white, rgba(199, 255, 201, 0.5), white);
   text-align: center;
+  z-index: 1;
   .text {
     padding: 20px;
     margin: 0;
   }
 }
-.form, .prod-img {
-  display: inline-block;
-}
-.form-line {
-  input {
-    width: 320px;
-    padding: 5px;
-    margin: 10px;
-  }
-}
+
 //________________________________________________________________________________
 @media screen and ($xs) {
   .hero {

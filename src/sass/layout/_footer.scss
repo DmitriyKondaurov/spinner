@@ -3,6 +3,8 @@ footer {
   background-color: rgba(118, 118, 118, 0.5);
   .footer_wrapper {
     max-width: 1170px;
+    margin: auto;
+    padding-top: 5px;
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
@@ -18,7 +20,7 @@ footer {
 .footer_contacts {
   width: 360px;
   text-align: left;
-  font-size: 18px;
+  font-size: 16px;
 }
 @media screen and ($xs) {
   footer {

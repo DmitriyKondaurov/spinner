@@ -6614,7 +6614,7 @@ section {
   height: 100%;
   width: 100%; }
   .loader .loader_inner {
-    background-image: url("../lesson19/layouts/img/preloader.gif");
+    background-image: url("../img/2.gif");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -6626,6 +6626,16 @@ section {
     left: 50%;
     top: 50%;
     position: absolute; }
+
+.logo {
+  margin: 0 10px; }
+
+.sale_sticker {
+  position: absolute;
+  top: -60px;
+  right: 0px;
+  z-index: 2;
+  width: 50%; }
 
 @font-face {}.toggle_mnu {
   position: relative;
@@ -6772,7 +6782,7 @@ section {
     float: left;
     overflow: hidden;
     text-align: center;
-    padding: 5px;
+    padding: 0;
     background-color: transparent; }
   .header #top_header {
     position: fixed;
@@ -6791,6 +6801,8 @@ footer {
   background-color: rgba(118, 118, 118, 0.5); }
   footer .footer_wrapper {
     max-width: 1170px;
+    margin: auto;
+    padding-top: 5px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -6814,7 +6826,38 @@ footer {
 .footer_contacts {
   width: 360px;
   text-align: left;
-  font-size: 18px; }
+  font-size: 16px; }
+
+.form_buy {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(199, 255, 201, 0.5)), color-stop(white), to(rgba(199, 255, 201, 0.5)));
+  background: -webkit-linear-gradient(left, rgba(199, 255, 201, 0.5), white, rgba(199, 255, 201, 0.5));
+  background: linear-gradient(to right, rgba(199, 255, 201, 0.5), white, rgba(199, 255, 201, 0.5));
+  text-align: center; }
+  .form_buy .prod-img {
+    display: none; }
+
+.form, .prod-img {
+  display: inline-block;
+  position: relative;
+  z-index: 1; }
+
+.form-line input {
+  width: 300px;
+  padding: 5px;
+  margin: 10px 0; }
+
+.dbl_form-line input {
+  padding: 5px;
+  margin: 8px 0; }
+  .dbl_form-line input:first-child {
+    width: 158px; }
+  .dbl_form-line input:last-child {
+    width: 135px; }
+
+@media screen and (min-width: 768px) {
+  .form_buy .prod-img {
+    display: inline-block;
+    width: 50%; } }
 
 .button-more {
   display: block;
@@ -6862,25 +6905,20 @@ footer {
   max-width: 400px; }
 
 .hot_buy {
-  background-size: cover;
-  text-align: center; }
+  background: -webkit-gradient(linear, left top, right top, from(white), color-stop(rgba(199, 255, 201, 0.5)), to(white));
+  background: -webkit-linear-gradient(left, white, rgba(199, 255, 201, 0.5), white);
+  background: linear-gradient(to right, white, rgba(199, 255, 201, 0.5), white);
+  text-align: center;
+  z-index: 1; }
   .hot_buy .text {
     padding: 20px;
     margin: 0; }
 
-.form, .prod-img {
-  display: inline-block; }
-
-.form-line input {
-  width: 320px;
-  padding: 5px;
-  margin: 10px; }
-
 .about {
   text-align: center;
-  background: -webkit-gradient(linear, left top, right top, from(white), color-stop(rgba(255, 250, 180, 0.5)), to(white)), url(../img/bike-car.png) 100% 100% no-repeat;
-  background: -webkit-linear-gradient(left, white, rgba(255, 250, 180, 0.5), white), url(../img/bike-car.png) 100% 100% no-repeat;
-  background: linear-gradient(to right, white, rgba(255, 250, 180, 0.5), white), url(../img/bike-car.png) 100% 100% no-repeat; }
+  background: -webkit-gradient(linear, left top, right top, from(white), color-stop(rgba(255, 250, 180, 0.5)), to(white));
+  background: -webkit-linear-gradient(left, white, rgba(255, 250, 180, 0.5), white);
+  background: linear-gradient(to right, white, rgba(255, 250, 180, 0.5), white); }
   .about .about_wrap {
     max-width: 1170px;
     margin: auto; }
@@ -6904,9 +6942,9 @@ footer {
 
 .quality {
   text-align: center;
-  background: -webkit-gradient(linear, left top, right top, from(white), color-stop(#e6e6e6), to(white)), url(../img/bike-car.png) 100% 100% no-repeat;
-  background: -webkit-linear-gradient(left, white, #e6e6e6, white), url(../img/bike-car.png) 100% 100% no-repeat;
-  background: linear-gradient(to right, white, #e6e6e6, white), url(../img/bike-car.png) 100% 100% no-repeat; }
+  background: -webkit-gradient(linear, left top, right top, from(white), color-stop(#e6e6e6), to(white));
+  background: -webkit-linear-gradient(left, white, #e6e6e6, white);
+  background: linear-gradient(to right, white, #e6e6e6, white); }
   .quality ul {
     display: -webkit-box;
     display: -webkit-flex;
@@ -6952,6 +6990,11 @@ footer {
       -webkit-align-items: center;
           -ms-flex-align: center;
               align-items: center; }
+      .goods .goods_wrap ul li {
+        border: 2px solid black;
+        -webkit-border-radius: 20px;
+        border-radius: 20px;
+        margin: 5px; }
   .goods .subtitle_orders_online {
     margin-top: 30px; }
 
@@ -6968,16 +7011,18 @@ footer {
 
 .service_list {
   text-align: center;
-  background: -webkit-gradient(linear, left top, right top, from(white), color-stop(rgba(230, 230, 230, 0.5)), to(white)), url(../img/bike-car.png) 100% 100% no-repeat;
-  background: -webkit-linear-gradient(left, white, rgba(230, 230, 230, 0.5), white), url(../img/bike-car.png) 100% 100% no-repeat;
-  background: linear-gradient(to right, white, rgba(230, 230, 230, 0.5), white), url(../img/bike-car.png) 100% 100% no-repeat; }
+  background: -webkit-gradient(linear, left top, right top, from(white), color-stop(rgba(209, 192, 213, 0.5)), to(white));
+  background: -webkit-linear-gradient(left, white, rgba(209, 192, 213, 0.5), white);
+  background: linear-gradient(to right, white, rgba(209, 192, 213, 0.5), white); }
+  .service_list ul li {
+    text-align: left; }
 
-.form_buy {
-  text-align: center; }
-  .form_buy .prod-img {
-    display: none; }
+.kinder {
+  display: none;
+  float: left;
+  overflow: hidden;
+  margin-right: 20px; }
 
 @media screen and (min-width: 768px) {
-  .form_buy .prod-img {
-    display: inline-block;
-    width: 50%; } }
+  .kinder {
+    display: block; } }
