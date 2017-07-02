@@ -8,51 +8,54 @@
 .form, .prod-img {
   display: inline-block;
   position: relative;
-  z-index: 1;
+  vertical-align: text-top;
 }
 .form {
-  border-radius: 20px;
-  border: 2px solid lightgrey;
-  background-color: lightskyblue;
   padding: 5px;
-}
-.form-line {
-  input {
-    width: 300px;
+  button.b24-web-form-popup-btn-6 {
+    width: 200px;
+    margin: 8px;
     padding: 5px;
-    margin: 10px 0;
-  }
-}
-.dbl_form-line {
-  input {
-    padding: 5px;
-    margin: 8px 0;
-    &:first-child {
-      width: 158px;
+    border-radius: 5px;
+    border-width: 2px;
+    border-style: outset;
+    background-color: #54eec7;
+    box-shadow: 10px 10px 5px grey;
+    font-weight: 900;
+    font-size: 22px;
+    line-height: 38px;
+    font-variant: all-petite-caps;
+    color: black;
+    &:hover {
+      box-shadow: 8px 8px 3px grey;
+      background-color: #4ed3ab;
+      color: #fffbed;
     }
-    &:last-child {
-      width: 135px;
+    &:active {
+      box-shadow: 5px 5px 2px grey;
+      outline: none;
+      transform: translateY(5px);
     }
   }
-}
-.form {
   .price {
     display: flex;
     justify-content: flex-end;
     flex-flow: column wrap;
-    align-items: flex-start;
+    align-items: center;
   }
   .old-price {
     padding: 5px;
+    margin: 5px;
     background-color: gray;
     -webkit-border-radius:10px;
     -moz-border-radius:10px;
     border-radius:10px;
     color: #000000;
     text-decoration: line-through;
+    border: 1px solid lightgrey;
     font-weight: 900;
     font-size: 28px;
-    line-height: 48px;
+    line-height: 44px;
   }
   .new-price {
     padding: 5px;
@@ -60,6 +63,7 @@
     -webkit-border-radius:10px;
     -moz-border-radius:10px;
     border-radius:10px;
+    border: 1px solid dimgray;
     color: red;
     text-decoration: none;
     //align-self: stretch;
@@ -71,16 +75,17 @@
 .sale_sticker {
   position: absolute;
   top: -30px;
-  right: 0px;
+  right: 0;
   z-index: 2;
-  width:50%;
+  width: 35%;
 }
 .dbl_buy_price, .triple_buy_price {
+  padding: 10px 0;
+  //text-align: left;
   color: red;
-  font-size: 18px;
-}
-.dbl_buy_price {
-  margin-top: 20px;
+  font-size: 24px;
+  line-height: 38px;
+  font-variant: all-petite-caps;
   span {
     font-size: 24px;
     font-weight: 900;
@@ -89,24 +94,13 @@
     -webkit-border-radius:10px;
     -moz-border-radius:10px;
     border-radius:10px;
+    border: 1px solid dimgray;
     color: red;
     text-decoration: none;
   }
 }
-
-input {
-  border-radius: 5px;
-  &[type=submit] {
-    border-radius: 5px;
-    padding: 5px;
-    margin: 8px;
-    background-color: #c9e2b3;
-    font-variant: all-petite-caps;
-    &:hover {
-      background-color: #4DC7A0;
-      //color: #fff;
-    }
-  }
+.dbl_buy_price {
+  margin-top: 40px;
 }
 
 @media screen and ($xs) {

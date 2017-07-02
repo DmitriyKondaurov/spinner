@@ -17,6 +17,16 @@
             crossorigin="anonymous">
     </script>
     <script src="js/libs.min.js"></script>
+    <script id="bx24_form_button" data-skip-moving="true">
+        (function(w,d,u,b){w['Bitrix24FormObject']=b;w[b] = w[b] || function(){arguments[0].ref=u;
+                (w[b].forms=w[b].forms||[]).push(arguments[0])};
+            if(w[b]['forms']) return;
+            s=d.createElement('script');r=1*new Date();s.async=1;s.src=u+'?'+r;
+            h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
+        })(window,document,'https://b24-n595814d8d8d65.bitrix24.ua/bitrix/js/crm/form_loader.js','b24form');
+
+        b24form({"id":"6","lang":"ru","sec":"rsj711","type":"button","click":""});
+    </script>
 </head>
 <body>
 <!--[if lt IE 8]>
@@ -62,11 +72,10 @@
     <div class="hot_buy_wrap">
         <h1 class="text">Спешите купить оригинальные спиннеры<br> по акции, недорого!!!</h1>
         <div class="prod-img">
-            <p class="dbl_buy_price">При покупке от 2-х шт. цена <span >60 грн.!</span></p>
-            <p class="triple_buy_price">При покупке от 3-х шт. доставка за наш счёт!</p>
+
             <img src="img/products.png" alt="">
         </div>
-        <form method="POST" action="http://" class="form">
+        <div class="form" action="">
             <img src="img/sale-img.png" alt="" class="sale_sticker">
             <div class="price">
                 <div class="old-price">
@@ -78,19 +87,10 @@
                     <span class="new-price-currency">грн.</span>
                 </div>
             </div>
-            <div class="form-line"><input type="text" name="name" required="" placeholder="Ваше ФИО"></div>
-            <div class="form-line"><input type="tel" name="phone" required=""
-                placeholder="Ваш номер телефона"></div>
-            <div class="form-line"><input type="text" name="city" required="" placeholder="Ваш город"></div>
-            <div
-            class="form-line"><input type="text" name="post" required=""
-                placeholder="Номер отд. Новой почты"></div>
-            <div class="dbl_form-line"><input type="text" name="color" required="" placeholder="Цвет спиннера">
-                <input type="number" name="value" required="" placeholder="Количество"></div>
-            <div class="form_submit">
-                <input type="submit" class="form_submit_btn" value="Оформить заказ">
-            </div>
-        </form>
+            <p class="dbl_buy_price">При покупке от 2-х шт. цена <span >60 грн.!</span></p>
+            <p class="triple_buy_price">При покупке от 3-х шт. <span>доставка за наш счёт!</span></p>
+            <button class="b24-web-form-popup-btn-6">ОФОРМИТЬ ЗАКАЗ</button>
+        </div>
     </div>
 </section>
 
@@ -99,12 +99,12 @@
         <h2 class="title">Для чего нужен Спиннер?</h2>
         <ul>
             <li>
-            <img src="img/img2.png" alt="">
-            <p class="text">Развивает моторику пальцев рук</p>
+                <img src="img/img2.png" alt="">
+                <p class="text">Развивает моторику пальцев рук</p>
             </li>
             <li>
-            <img src="img/img3.png" alt="">
-            <p class="text">Снимает стресс</p>
+                <img src="img/img3.png" alt="">
+                <p class="text">Снимает стресс</p>
             </li>
             <li>
                 <img src="img/img6.png" alt="">
@@ -115,12 +115,12 @@
                 <p class="text">Развивает концентрацию внимания</p>
             </li>
             <li>
-            <img src="img/img4.png" alt="">
-            <p class="text">Cкоротит Ваше время в ожидании очереди, в пробках и т. п.</p>
+                <img src="img/img4.png" alt="">
+                <p class="text">Cкоротит Ваше время в ожидании очереди, в пробках и т. п.</p>
             </li>
             <li>
-            <img src="img/img5.png" alt="">
-            <p class="text">Отличный подарок</p>
+                <img src="img/img5.png" alt="">
+                <p class="text">Отличный подарок</p>
             </li>
         </ul>
     </div>
@@ -131,13 +131,14 @@
         <div class="quality_goods col-xs-12 col-sm-6 col-md-6 col-lg-6"><img src="img/prod-2.png" alt=""></div>
         <ul class="col-xs-12 col-sm-6 col-md-5 col-lg-4">
             <li>
-                <span class="bold">Высококачественный пластик. Не воняет и не испаряет токсичных веществ.</span>
+                <span class="bold">Высококачественный пластик не воняет и не испаряет токсичных веществ.</span>
             </li>
             <li>
                 <span class="bold">Используется профессиональный качественный подшипник.</span>
             </li>
             <li>
-                <span class="bold">Сбалансированный и отцентрованный, крутится продолжительное время</span>
+                <span class="bold">Металлические эксцентрики сбалансированы и отцентрованы, что позволяет крутится
+                   спиннеру продолжительное время</span>
             </li>
             <li>
                 <span class="bold">Прочная и эргономичная конструкция</span>
@@ -161,7 +162,8 @@
                         <span class="new-price-currency">грн.</span>
                     </div>
                 </div>
-                <button class="btn_open_popup">купить спиннер</button>
+                <button class="b24-web-form-popup-btn-6">купить спиннер</button>
+
                 <!--<p class="subtitle">Осталось <span class="bold">22 шт.</span></p>-->
             </li>
             <li>
@@ -176,7 +178,7 @@
                         <span class="new-price-currency">грн.</span>
                     </div>
                 </div>
-                <button class="btn_open_popup">купить спиннер</button>
+                <button class="b24-web-form-popup-btn-6">купить спиннер</button>
                 <!--<p class="subtitle">Осталось <span class="bold">18 шт.</span></p>-->
             </li>
             <li>
@@ -191,7 +193,7 @@
                         <span class="new-price-currency">грн.</span>
                     </div>
                 </div>
-                <button class="btn_open_popup">купить спиннер</button>
+                <button class="b24-web-form-popup-btn-6">купить спиннер</button>
                 <!--<p class="subtitle">Осталось <span class="bold">21 шт.</span></p>-->
             </li>
             <li>
@@ -206,7 +208,7 @@
                         <span class="new-price-currency">грн.</span>
                     </div>
                 </div>
-                <button class="btn_open_popup">купить спиннер</button>
+                <button class="b24-web-form-popup-btn-6">купить спиннер</button>
                 <!--<p class="subtitle">Осталось <span class="bold">19 шт.</span></p>-->
             </li>
             <li>
@@ -221,7 +223,37 @@
                         <span class="new-price-currency">грн.</span>
                     </div>
                 </div>
-                <button class="btn_open_popup">купить спиннер</button>
+                <button class="b24-web-form-popup-btn-6">купить спиннер</button>
+                <!--<p class="subtitle">Осталось <span class="bold">15 шт.</span></p>-->
+            </li>
+            <li>
+                <img src="img/prod-9.jpg" alt="">
+                <div class="price ">
+                    <div class="old-price">
+                        <span class="old-price-value">90</span>
+                        <span class="old-price-currency">грн.</span>
+                    </div>
+                    <div class="new-price">
+                        <span class="new-price-value">70</span>
+                        <span class="new-price-currency">грн.</span>
+                    </div>
+                </div>
+                <button class="b24-web-form-popup-btn-6">купить спиннер</button>
+                <!--<p class="subtitle">Осталось <span class="bold">15 шт.</span></p>-->
+            </li>
+            <li>
+                <img src="img/prod-192.jpg" width="310" alt="">
+                <div class="price ">
+                    <div class="old-price">
+                        <span class="old-price-value">90</span>
+                        <span class="old-price-currency">грн.</span>
+                    </div>
+                    <div class="new-price">
+                        <span class="new-price-value">70</span>
+                        <span class="new-price-currency">грн.</span>
+                    </div>
+                </div>
+                <button class="b24-web-form-popup-btn-6">купить спиннер</button>
                 <!--<p class="subtitle">Осталось <span class="bold">15 шт.</span></p>-->
             </li>
 
@@ -238,7 +270,7 @@
                         <span class="new-price-currency">грн.</span>
                     </div>
                 </div>
-                <button class="btn_open_popup">купить спиннер</button>
+                <button class="b24-web-form-popup-btn-6">купить спиннер</button>
                 <p class="subtitle">Осталось <span class="bold">10 шт.</span></p>
             </li>
             <li>
@@ -254,7 +286,7 @@
                         <span class="new-price-currency">грн.</span>
                     </div>
                 </div>
-                <button class="btn_open_popup">купить спиннер</button>
+                <button class="b24-web-form-popup-btn-6">купить спиннер</button>
                 <p class="subtitle">Осталось <span class="bold">10 шт.</span></p>
             </li>
             <li>
@@ -270,7 +302,7 @@
                         <span class="new-price-currency">грн.</span>
                     </div>
                 </div>
-                <button class="btn_open_popup">купить спиннер</button>
+                <button class="b24-web-form-popup-btn-6">купить спиннер</button>
                 <p class="subtitle">Осталось <span class="bold">10 шт.</span></p>
             </li>
             <li>
@@ -286,7 +318,7 @@
                         <span class="new-price-currency">грн.</span>
                     </div>
                 </div>
-                <button class="btn_open_popup">купить спиннер</button>
+                <button class="b24-web-form-popup-btn-6">купить спиннер</button>
                 <p class="subtitle">Осталось <span class="bold">10 шт.</span></p>
             </li>-->
         </ul>
@@ -347,7 +379,8 @@
 <section class="form_buy">
     <div class="container">
         <h2 class="title">Успей купить SPINNER<br>со скидкой!</h2>
-        <form method="POST" action="http://" class="form">
+        <div class="form" action="">
+            <img src="img/sale-img.png" alt="" class="sale_sticker">
             <div class="price">
                 <div class="old-price">
                     <span class="old-price-value">90</span>
@@ -358,23 +391,12 @@
                     <span class="new-price-currency">грн.</span>
                 </div>
             </div>
-            <div class="form-line"><input type="text" name="name" required="" placeholder="Ваше ФИО"></div>
-            <div class="form-line"><input type="tel" name="phone" required=""
-                placeholder="Ваш номер телефона"></div>
-            <div class="form-line"><input type="text" name="city" required="" placeholder="Ваш город"></div>
-            <div
-            class="form-line"><input type="text" name="post" required=""
-                placeholder="Номер отд. Новой почты"></div>
-            <div class="dbl_form-line"><input type="text" name="color" required="" placeholder="Цвет спиннера">
-                <input type="number" name="value" required="" placeholder="Количество"></div>
-            <div class="form_submit">
-                <input type="submit" class="form_submit_btn" value="Оформить заказ">
-            </div>
+            <p class="dbl_buy_price">При покупке от 2-х шт. цена <span >60 грн.!</span></p>
+            <p class="triple_buy_price">При покупке от 3-х шт. <span>доставка за наш счёт!</span></p>
+            <button class="b24-web-form-popup-btn-6">ОФОРМИТЬ ЗАКАЗ</button>
             <img src="img/sale-img.png" alt="" class="sale_sticker">
-        </form>
+        </div>
         <div class="prod-img">
-            <p class="dbl_buy_price">При покупке 2-х шт. цена <span >60 грн.!</span></p>
-            <p class="triple_buy_price">При покупке от 3-х шт. доставка за наш счёт!</p>
             <img src="img/pict9.png" alt="фото спиннера">
         </div>
     </div>
@@ -412,5 +434,6 @@
     ga('create', 'UA-XXXXX-X', 'auto');
     ga('send', 'pageview');
 </script>
+
 </body>
 </html>

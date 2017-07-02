@@ -37,7 +37,6 @@ $(document).ready(function() {
     });
     //validator
     $("input, select, textarea").jqBootstrapValidation();
-
 });
 //preloader
 $(window).on('load',function() {

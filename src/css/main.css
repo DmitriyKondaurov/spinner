@@ -6776,7 +6776,8 @@ section {
     overflow: hidden;
     text-align: center;
     padding: 0;
-    background-color: transparent; }
+    background-color: transparent;
+    font-size: 18px; }
   .header #top_header {
     position: fixed;
     top: 0;
@@ -6832,104 +6833,106 @@ footer {
 .form, .prod-img {
   display: inline-block;
   position: relative;
-  z-index: 1; }
+  vertical-align: text-top; }
 
 .form {
-  -webkit-border-radius: 20px;
-          border-radius: 20px;
-  border: 2px solid lightgrey;
-  background-color: lightskyblue;
   padding: 5px; }
-
-.form-line input {
-  width: 300px;
-  padding: 5px;
-  margin: 10px 0; }
-
-.dbl_form-line input {
-  padding: 5px;
-  margin: 8px 0; }
-  .dbl_form-line input:first-child {
-    width: 158px; }
-  .dbl_form-line input:last-child {
-    width: 135px; }
-
-.form .price {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-flow: column wrap;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
-  -webkit-box-align: start;
-  -webkit-align-items: flex-start;
-      -ms-flex-align: start;
-          align-items: flex-start; }
-
-.form .old-price {
-  padding: 5px;
-  background-color: gray;
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
-  color: #000000;
-  text-decoration: line-through;
-  font-weight: 900;
-  font-size: 28px;
-  line-height: 48px; }
-
-.form .new-price {
-  padding: 5px;
-  background-color: yellow;
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
-  color: red;
-  text-decoration: none;
-  font-weight: 900;
-  font-size: 48px;
-  line-height: 48px; }
+  .form button.b24-web-form-popup-btn-6 {
+    width: 200px;
+    margin: 8px;
+    padding: 5px;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+    border-width: 2px;
+    border-style: outset;
+    background-color: #54eec7;
+    -webkit-box-shadow: 10px 10px 5px grey;
+            box-shadow: 10px 10px 5px grey;
+    font-weight: 900;
+    font-size: 22px;
+    line-height: 38px;
+    font-variant: all-petite-caps;
+    color: black; }
+    .form button.b24-web-form-popup-btn-6:hover {
+      -webkit-box-shadow: 8px 8px 3px grey;
+              box-shadow: 8px 8px 3px grey;
+      background-color: #4ed3ab;
+      color: #fffbed; }
+    .form button.b24-web-form-popup-btn-6:active {
+      -webkit-box-shadow: 5px 5px 2px grey;
+              box-shadow: 5px 5px 2px grey;
+      outline: none;
+      -webkit-transform: translateY(5px);
+          -ms-transform: translateY(5px);
+              transform: translateY(5px); }
+  .form .price {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: column wrap;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .form .old-price {
+    padding: 5px;
+    margin: 5px;
+    background-color: gray;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    color: #000000;
+    text-decoration: line-through;
+    border: 1px solid lightgrey;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 44px; }
+  .form .new-price {
+    padding: 5px;
+    background-color: yellow;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    border: 1px solid dimgray;
+    color: red;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 48px; }
 
 .sale_sticker {
   position: absolute;
   top: -30px;
-  right: 0px;
+  right: 0;
   z-index: 2;
-  width: 50%; }
+  width: 35%; }
 
 .dbl_buy_price, .triple_buy_price {
+  padding: 10px 0;
   color: red;
-  font-size: 18px; }
-
-.dbl_buy_price {
-  margin-top: 20px; }
-  .dbl_buy_price span {
+  font-size: 24px;
+  line-height: 38px;
+  font-variant: all-petite-caps; }
+  .dbl_buy_price span, .triple_buy_price span {
     font-size: 24px;
     font-weight: 900;
     padding: 5px;
     background-color: yellow;
     -webkit-border-radius: 10px;
     border-radius: 10px;
+    border: 1px solid dimgray;
     color: red;
     text-decoration: none; }
 
-input {
-  -webkit-border-radius: 5px;
-          border-radius: 5px; }
-  input[type=submit] {
-    -webkit-border-radius: 5px;
-            border-radius: 5px;
-    padding: 5px;
-    margin: 8px;
-    background-color: #c9e2b3;
-    font-variant: all-petite-caps; }
-    input[type=submit]:hover {
-      background-color: #4DC7A0; }
+.dbl_buy_price {
+  margin-top: 40px; }
 
 @media screen and (min-width: 768px) {
   .form_buy .prod-img {
@@ -7074,10 +7077,13 @@ input {
         border-radius: 20px;
         margin: 5px;
         position: relative; }
-        .goods .goods_wrap ul li:hover .btn_open_popup {
+        .goods .goods_wrap ul li:hover .b24-web-form-popup-btn-6 {
           opacity: 1; }
         .goods .goods_wrap ul li:hover .price, .goods .goods_wrap ul li:hover img {
           opacity: 0.3; }
+        .goods .goods_wrap ul li img {
+          -webkit-border-radius: 20px;
+                  border-radius: 20px; }
   .goods .subtitle_orders_online {
     margin-top: 30px; }
   .goods .price {
@@ -7129,22 +7135,22 @@ input {
     border-top: 1px solid black;
     -webkit-border-radius: 0 0 18px 0;
             border-radius: 0 0 18px 0; }
-
-.btn_open_popup {
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -webkit-border-radius: 10px;
-          border-radius: 10px;
-  outline: none; }
-  .btn_open_popup:hover {
-    background-color: #4DC7A0; }
+  .goods .b24-web-form-popup-btn-6 {
+    -webkit-transition: .5s ease;
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-border-radius: 10px;
+            border-radius: 10px;
+    outline: none;
+    font-variant: all-petite-caps; }
+    .goods .b24-web-form-popup-btn-6:hover {
+      background-color: #4DC7A0; }
 
 .testimonials {
   background: -webkit-gradient(linear, left top, right top, from(white), color-stop(rgba(164, 213, 212, 0.5)), to(white));

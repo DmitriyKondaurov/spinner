@@ -15,11 +15,14 @@
         border-radius: 20px;
         margin: 5px;
         position: relative;
-        &:hover .btn_open_popup {
+        &:hover .b24-web-form-popup-btn-6 {
           opacity: 1;
         }
         &:hover .price, &:hover img {
           opacity: 0.3;
+        }
+        img {
+          border-radius: 20px;
         }
       }
     }
@@ -58,20 +61,22 @@
     border-top: 1px solid black;
     border-radius: 0 0 18px 0;
   }
-}
-.btn_open_popup {
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  border-radius: 10px;
-  outline: none;
-  &:hover {
-    background-color: #4DC7A0;
-    //color: #fff;
+  .b24-web-form-popup-btn-6 {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    border-radius: 10px;
+    outline: none;
+    font-variant: all-petite-caps;
+
+    &:hover {
+      background-color: #4DC7A0;
+      //color: #fff;
+    }
   }
 }
 @media screen and ($xs) {
