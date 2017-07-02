@@ -17,16 +17,39 @@
             crossorigin="anonymous">
     </script>
     <script src="js/libs.min.js"></script>
-    <script id="bx24_form_button" data-skip-moving="true">
-        (function(w,d,u,b){w['Bitrix24FormObject']=b;w[b] = w[b] || function(){arguments[0].ref=u;
-                (w[b].forms=w[b].forms||[]).push(arguments[0])};
-            if(w[b]['forms']) return;
-            s=d.createElement('script');r=1*new Date();s.async=1;s.src=u+'?'+r;
-            h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
-        })(window,document,'https://b24-n595814d8d8d65.bitrix24.ua/bitrix/js/crm/form_loader.js','b24form');
-
-        b24form({"id":"6","lang":"ru","sec":"rsj711","type":"button","click":""});
-    </script>
+    <script type='text/javascript' class="mth_com_ua">var url_height =
+        'https://mth.com.ua/widgets/bCle3cNCjiWPyOW6ZcNGWT/get_form_height/ccnSomWOTbW7pcKCkLWPaV.js';
+    var rhccnSomWOTbW7pcKCkLWPaV;
+    (function (d, t) {
+        var s = d.createElement(t), options = {
+            'userName': '',
+            'formHashURL': '/widgets/bCle3cNCjiWPyOW6ZcNGWT/ccnSomWOTbW7pcKCkLWPaV',
+            'formHash': 'rhccnSomWOTbW7pcKCkLWPaV',
+            'autoResize': true,
+            'height': '642px',
+            'heightURL': url_height,
+            'formID': 'ccnSomWOTbW7pcKCkLWPaV',
+            'async': true,
+            'host': 'mth.com.ua',
+            'header': 'show',
+            'ssl': true
+        };
+        s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') +
+            'mth.com.ua/scripts/form.js';
+        s.onload = s.onreadystatechange = function () {
+            var rs = this.readyState;
+            if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+            try {
+                rhccnSomWOTbW7pcKCkLWPaV = new mthForm();
+                rhccnSomWOTbW7pcKCkLWPaV.initialize(options);
+                rhccnSomWOTbW7pcKCkLWPaV.display();
+                rhccnSomWOTbW7pcKCkLWPaV.addResizeScript();
+            } catch (e) {
+            }
+        };
+        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode;
+        par.insertBefore(s, scr);
+    })(document, 'script');</script>
 </head>
 <body>
 <!--[if lt IE 8]>
@@ -87,12 +110,36 @@
                     <span class="new-price-currency">грн.</span>
                 </div>
             </div>
-            <p class="dbl_buy_price">При покупке от 2-х шт. цена <span >60 грн.!</span></p>
+            <p class="dbl_buy_price">При покупке от 2-х шт. цена <span>60 грн.!</span></p>
             <p class="triple_buy_price">При покупке от 3-х шт. <span>доставка за наш счёт!</span></p>
-            <button class="b24-web-form-popup-btn-6">ОФОРМИТЬ ЗАКАЗ</button>
+            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">ОФОРМИТЬ ЗАКАЗ</button>
         </div>
     </div>
 </section>
+<div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div id='formheightccnSomWOTbW7pcKCkLWPaV' style='display:none'></div>
+                <div id='mth-rhccnSomWOTbW7pcKCkLWPaV'>Заповніть мою <a
+                        href='https://mth.com.ua/widgets/bCle3cNCjiWPyOW6ZcNGWT/ccnSomWOTbW7pcKCkLWPaV'>веб-форму</a>.
+                </div>
+                <div id='mth-adv' style='font-family:inherit;font-size: small;color:#a7a7a7;text-align:center;display:block;'><a
+                        href='https://mth.com.ua/online-database-builder?from=bottom_ad'>Створити базу даних</a> з веб-формою в МТХ
+                    займе всього 5 хвилин.
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+
+</div>
 
 <section id="about" class="about">
     <div class="about_wrap">
@@ -162,8 +209,7 @@
                         <span class="new-price-currency">грн.</span>
                     </div>
                 </div>
-                <button class="b24-web-form-popup-btn-6">купить спиннер</button>
-
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">КУПИТЬ СПИННЕР</button>
                 <!--<p class="subtitle">Осталось <span class="bold">22 шт.</span></p>-->
             </li>
             <li>
@@ -178,7 +224,7 @@
                         <span class="new-price-currency">грн.</span>
                     </div>
                 </div>
-                <button class="b24-web-form-popup-btn-6">купить спиннер</button>
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">КУПИТЬ СПИННЕР</button>
                 <!--<p class="subtitle">Осталось <span class="bold">18 шт.</span></p>-->
             </li>
             <li>
@@ -193,7 +239,7 @@
                         <span class="new-price-currency">грн.</span>
                     </div>
                 </div>
-                <button class="b24-web-form-popup-btn-6">купить спиннер</button>
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">КУПИТЬ СПИННЕР</button>
                 <!--<p class="subtitle">Осталось <span class="bold">21 шт.</span></p>-->
             </li>
             <li>
@@ -208,7 +254,7 @@
                         <span class="new-price-currency">грн.</span>
                     </div>
                 </div>
-                <button class="b24-web-form-popup-btn-6">купить спиннер</button>
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">КУПИТЬ СПИННЕР</button>
                 <!--<p class="subtitle">Осталось <span class="bold">19 шт.</span></p>-->
             </li>
             <li>
@@ -223,7 +269,7 @@
                         <span class="new-price-currency">грн.</span>
                     </div>
                 </div>
-                <button class="b24-web-form-popup-btn-6">купить спиннер</button>
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">КУПИТЬ СПИННЕР</button>
                 <!--<p class="subtitle">Осталось <span class="bold">15 шт.</span></p>-->
             </li>
             <li>
@@ -238,7 +284,7 @@
                         <span class="new-price-currency">грн.</span>
                     </div>
                 </div>
-                <button class="b24-web-form-popup-btn-6">купить спиннер</button>
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">КУПИТЬ СПИННЕР</button>
                 <!--<p class="subtitle">Осталось <span class="bold">15 шт.</span></p>-->
             </li>
             <li>
@@ -253,7 +299,7 @@
                         <span class="new-price-currency">грн.</span>
                     </div>
                 </div>
-                <button class="b24-web-form-popup-btn-6">купить спиннер</button>
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">КУПИТЬ СПИННЕР</button>
                 <!--<p class="subtitle">Осталось <span class="bold">15 шт.</span></p>-->
             </li>
 
@@ -270,7 +316,7 @@
                         <span class="new-price-currency">грн.</span>
                     </div>
                 </div>
-                <button class="b24-web-form-popup-btn-6">купить спиннер</button>
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">КУПИТЬ СПИННЕР</button>
                 <p class="subtitle">Осталось <span class="bold">10 шт.</span></p>
             </li>
             <li>
@@ -286,7 +332,7 @@
                         <span class="new-price-currency">грн.</span>
                     </div>
                 </div>
-                <button class="b24-web-form-popup-btn-6">купить спиннер</button>
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">КУПИТЬ СПИННЕР</button>
                 <p class="subtitle">Осталось <span class="bold">10 шт.</span></p>
             </li>
             <li>
@@ -302,7 +348,7 @@
                         <span class="new-price-currency">грн.</span>
                     </div>
                 </div>
-                <button class="b24-web-form-popup-btn-6">купить спиннер</button>
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">КУПИТЬ СПИННЕР</button>
                 <p class="subtitle">Осталось <span class="bold">10 шт.</span></p>
             </li>
             <li>
@@ -318,7 +364,7 @@
                         <span class="new-price-currency">грн.</span>
                     </div>
                 </div>
-                <button class="b24-web-form-popup-btn-6">купить спиннер</button>
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">КУПИТЬ СПИННЕР</button>
                 <p class="subtitle">Осталось <span class="bold">10 шт.</span></p>
             </li>-->
         </ul>
@@ -368,7 +414,7 @@
         <ul>
             <li>
                 <p><span class="bold">Доставка в любую точку Украины</span> — Новой Почтой, наложенным
-                платежём</p>
+                    платежём</p>
                 <p><span class="bold">При заказе от 3-х шт. доставка бесплатно!</span></p>
                 <p><span class="bold">Время доставки:</span> 1—2 дня </p>
                 <p><span class="bold">Стоимость доставки:</span> 30—35 грн</p>
@@ -391,9 +437,9 @@
                     <span class="new-price-currency">грн.</span>
                 </div>
             </div>
-            <p class="dbl_buy_price">При покупке от 2-х шт. цена <span >60 грн.!</span></p>
+            <p class="dbl_buy_price">При покупке от 2-х шт. цена <span>60 грн.!</span></p>
             <p class="triple_buy_price">При покупке от 3-х шт. <span>доставка за наш счёт!</span></p>
-            <button class="b24-web-form-popup-btn-6">ОФОРМИТЬ ЗАКАЗ</button>
+            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">ОФОРМИТЬ ЗАКАЗ</button>
             <img src="img/sale-img.png" alt="" class="sale_sticker">
         </div>
         <div class="prod-img">

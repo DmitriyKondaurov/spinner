@@ -6574,7 +6574,16 @@ button.close {
 
 body {
   color: black;
-  font: 400 20px/28px "Comic Sans MS"; }
+  font: 400 14px/20px "Comic Sans MS";
+  background: -webkit-gradient(linear, left top, right top, from(#e6e6e6), color-stop(white), color-stop(white), color-stop(white), to(#e6e6e6));
+  background: -webkit-linear-gradient(left, #e6e6e6, white, white, white, #e6e6e6);
+  background: linear-gradient(to right, #e6e6e6, white, white, white, #e6e6e6); }
+
+h1 {
+  font: 500 30px/32px "Comic Sans MS"; }
+
+h2 {
+  font: 700 26px/30px "Comic Sans MS"; }
 
 a {
   color: #13498f; }
@@ -6594,7 +6603,7 @@ img {
   margin: 0;
   padding: 20px;
   text-align: center;
-  font: 700 32px/36px "Comic Sans MS";
+  font: 700 26px/30px "Comic Sans MS";
   text-transform: uppercase; }
 
 section {
@@ -6629,6 +6638,38 @@ section {
 
 .logo {
   margin: 0 10px; }
+
+@media screen and (min-width: 568px) {
+  body {
+    font: 400 16px/22px "Comic Sans MS"; }
+  h1 {
+    font: 500 32px/34px "Comic Sans MS"; }
+  h2, h2.title {
+    font: 700 28px/32px "Comic Sans MS"; } }
+
+@media screen and (min-width: 768px) {
+  body {
+    font: 400 18px/24px "Comic Sans MS"; }
+  h1 {
+    font: 500 33px/35px "Comic Sans MS"; }
+  h2, h2.title {
+    font: 700 29px/33px "Comic Sans MS"; } }
+
+@media screen and (min-width: 992px) {
+  body {
+    font: 400 19px/26px "Comic Sans MS"; }
+  h1 {
+    font: 500 34px/36px "Comic Sans MS"; }
+  h2, h2.title {
+    font: 700 30px/34px "Comic Sans MS"; } }
+
+@media screen and (min-width: 1200px) {
+  body {
+    font: 400 20px/28px "Comic Sans MS"; }
+  h1 {
+    font: 500 36px/38px "Comic Sans MS"; }
+  h2, h2.title {
+    font: 700 32px/36px "Comic Sans MS"; } }
 
 @font-face {}.toggle_mnu {
   position: relative;
@@ -6777,7 +6818,7 @@ section {
     text-align: center;
     padding: 0;
     background-color: transparent;
-    font-size: 18px; }
+    font-size: 16px; }
   .header #top_header {
     position: fixed;
     top: 0;
@@ -6811,7 +6852,7 @@ footer {
         -ms-flex-flow: row wrap;
             flex-flow: row wrap; }
   footer h2 {
-    padding: 0 50px; }
+    padding: 0 30px; }
 
 .np-logo {
   float: left;
@@ -6854,8 +6895,8 @@ footer {
     font-variant: all-petite-caps;
     color: black; }
     .form button.b24-web-form-popup-btn-6:hover {
-      -webkit-box-shadow: 8px 8px 3px grey;
-              box-shadow: 8px 8px 3px grey;
+      -webkit-box-shadow: 9px 9px 4px grey;
+              box-shadow: 9px 9px 4px grey;
       background-color: #4ed3ab;
       color: #fffbed; }
     .form button.b24-web-form-popup-btn-6:active {
@@ -6904,8 +6945,8 @@ footer {
     color: red;
     text-decoration: none;
     font-weight: 900;
-    font-size: 48px;
-    line-height: 48px; }
+    font-size: 38px;
+    line-height: 46px; }
 
 .sale_sticker {
   position: absolute;
@@ -6921,9 +6962,10 @@ footer {
   line-height: 38px;
   font-variant: all-petite-caps; }
   .dbl_buy_price span, .triple_buy_price span {
-    font-size: 24px;
+    display: inline-block;
+    font-size: 22px;
     font-weight: 900;
-    padding: 5px;
+    padding: 0 5px;
     background-color: yellow;
     -webkit-border-radius: 10px;
     border-radius: 10px;
@@ -6939,6 +6981,16 @@ footer {
     width: 50%; }
     .form_buy .prod-img img {
       display: inline-block; } }
+
+#mth-rhccnSomWOTbW7pcKCkLWPaV {
+  max-width: 568px !important;
+  margin: auto !important; }
+
+#mth-adv {
+  display: none !important; }
+
+iframe {
+  max-height: 705px !important; }
 
 .button-more {
   display: block;
@@ -7023,9 +7075,9 @@ footer {
 
 .quality {
   text-align: center;
-  background: -webkit-gradient(linear, left top, right top, from(white), color-stop(#e6e6e6), to(white));
-  background: -webkit-linear-gradient(left, white, #e6e6e6, white);
-  background: linear-gradient(to right, white, #e6e6e6, white); }
+  background: -webkit-gradient(linear, left top, right top, from(white), color-stop(#a4d5d4), to(white));
+  background: -webkit-linear-gradient(left, white, #a4d5d4, white);
+  background: linear-gradient(to right, white, #a4d5d4, white); }
   .quality ul {
     display: -webkit-box;
     display: -webkit-flex;
@@ -7077,7 +7129,7 @@ footer {
         border-radius: 20px;
         margin: 5px;
         position: relative; }
-        .goods .goods_wrap ul li:hover .b24-web-form-popup-btn-6 {
+        .goods .goods_wrap ul li:hover .btn-info {
           opacity: 1; }
         .goods .goods_wrap ul li:hover .price, .goods .goods_wrap ul li:hover img {
           opacity: 0.3; }
@@ -7135,7 +7187,7 @@ footer {
     border-top: 1px solid black;
     -webkit-border-radius: 0 0 18px 0;
             border-radius: 0 0 18px 0; }
-  .goods .b24-web-form-popup-btn-6 {
+  .goods .btn-info {
     -webkit-transition: .5s ease;
     transition: .5s ease;
     opacity: 0;
@@ -7149,7 +7201,7 @@ footer {
             border-radius: 10px;
     outline: none;
     font-variant: all-petite-caps; }
-    .goods .b24-web-form-popup-btn-6:hover {
+    .goods .btn-info:hover {
       background-color: #4DC7A0; }
 
 .testimonials {

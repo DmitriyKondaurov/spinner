@@ -27,7 +27,7 @@
     font-variant: all-petite-caps;
     color: black;
     &:hover {
-      box-shadow: 8px 8px 3px grey;
+      box-shadow: 9px 9px 4px grey;
       background-color: #4ed3ab;
       color: #fffbed;
     }
@@ -68,8 +68,8 @@
     text-decoration: none;
     //align-self: stretch;
     font-weight: 900;
-    font-size: 48px;
-    line-height: 48px;
+    font-size: 38px;
+    line-height: 46px;
   }
 }
 .sale_sticker {
@@ -81,15 +81,15 @@
 }
 .dbl_buy_price, .triple_buy_price {
   padding: 10px 0;
-  //text-align: left;
   color: red;
   font-size: 24px;
   line-height: 38px;
   font-variant: all-petite-caps;
   span {
-    font-size: 24px;
+    display: inline-block;
+    font-size: 22px;
     font-weight: 900;
-    padding: 5px;
+    padding: 0 5px;
     background-color: yellow;
     -webkit-border-radius:10px;
     -moz-border-radius:10px;
@@ -124,4 +124,15 @@
 
 @media screen and ($lg) {
 
+}
+//popup form___________________
+#mth-rhccnSomWOTbW7pcKCkLWPaV {
+  max-width: 568px !important;
+  margin: auto !important;
+}
+#mth-adv {
+  display: none !important;
+}
+iframe {
+  max-height: 705px !important;
 }

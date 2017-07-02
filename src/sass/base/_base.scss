@@ -1,6 +1,14 @@
 body {
   color: $text-main-color;
-  font: 400 20px/28px $font-main;
+  font: 400 14px/20px $font-main;
+  background: linear-gradient(to right, #e6e6e6, white,  white, white, #e6e6e6);
+
+}
+h1 {
+  font: 500 30px/32px $font-main;
+}
+h2 {
+  font: 700 26px/30px $font-main;
 }
 a {
   color: $brand-color;
@@ -21,7 +29,7 @@ img {
   margin: 0;
   padding: 20px;
   text-align: center;
-  font: 700 32px/36px $font-main;
+  font: 700 26px/30px $font-main;
   text-transform: uppercase;
 }
 section {
@@ -60,17 +68,49 @@ section {
 }
 
 @media screen and ($xs) {
-
+  body {
+    font: 400 16px/22px $font-main;
+  }
+  h1 {
+    font: 500 32px/34px $font-main;
+  }
+  h2, h2.title {
+    font: 700 28px/32px $font-main;
+  }
 }
 
 @media screen and ($sm) {
-
+  body {
+    font: 400 18px/24px $font-main;
+  }
+  h1 {
+    font: 500 33px/35px $font-main;
+  }
+  h2, h2.title {
+    font: 700 29px/33px $font-main;
+  }
 }
 
 @media screen and ($md) {
-
+  body {
+    font: 400 19px/26px $font-main;
+  }
+  h1 {
+    font: 500 34px/36px $font-main;
+  }
+  h2, h2.title {
+    font: 700 30px/34px $font-main;
+  }
 }
 
 @media screen and ($lg) {
-
+  body {
+    font: 400 20px/28px $font-main;
+  }
+  h1 {
+    font: 500 36px/38px $font-main;
+  }
+  h2, h2.title {
+    font: 700 32px/36px $font-main;
+  }
 }
